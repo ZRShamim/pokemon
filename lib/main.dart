@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 // import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:poke_api/components/colors/custom_color.dart';
+import 'package:poke_api/components/routes/routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,14 +36,17 @@ class MyApp extends StatelessWidget {
           );
         },
         theme: ThemeData(
-            // primaryColor:
-            // textTheme:
-            // appBarTheme:
-
-            ),
-        // navigatorKey: ,
-        // initialRoute: ,
-        // getPages: ,
+          primaryColor: CustomColor.mainBG,
+          backgroundColor: CustomColor.mainBG,
+          textTheme: GoogleFonts.notoSansTextTheme(Theme.of(context).textTheme),
+          appBarTheme: const AppBarTheme(
+            color: CustomColor.mainBG,
+            elevation: 0,
+          ),
+        ),
+        navigatorKey: Get.key,
+        initialRoute: Routes.pokedexScreen,
+        getPages: Routes.routeList,
       ),
     );
   }
