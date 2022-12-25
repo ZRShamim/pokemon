@@ -17,4 +17,44 @@ class Assets {
   static const String rock = 'assets/type_component/TypeRock.png';
   static const String steel = 'assets/type_component/TypeSteel.png';
   static const String water = 'assets/type_component/TypeWater.png';
+
+  static String getTypeAssets({required String type}) {
+    if (type == 'fighting') {
+      return Assets.fighting;
+    } else if (type == 'flying') {
+      return Assets.flying;
+    } else if (type == 'poison') {
+      return Assets.poison;
+    } else if (type == 'ground') {
+      return Assets.ground;
+    } else if (type == 'rock') {
+      return Assets.rock;
+    } else if (type == 'bug') {
+      return Assets.bug;
+    } else if (type == 'ghost') {
+      return Assets.ghost;
+    } else if (type == 'steel') {
+      return Assets.steel;
+    } else if (type == 'fire') {
+      return Assets.fire;
+    } else if (type == 'water') {
+      return Assets.water;
+    } else if (type == 'grass') {
+      return Assets.grass;
+    } else if (type == 'electric') {
+      return Assets.electric;
+    } else if (type == 'psychic') {
+      return Assets.psychic;
+    } else if (type == 'ice') {
+      return Assets.ice;
+    } else if (type == 'dragon') {
+      return Assets.dragon;
+    } else if (type == 'dark') {
+      return Assets.dark;
+    } else if (type == 'fairy') {
+      return Assets.fairy;
+    } else {
+      return Assets.normal;
+    }
+  }
 }

@@ -19,4 +19,44 @@ class PokemonTypeColor {
   static const Color rock = Color(0xffD7CD90);
   static const Color steel = Color(0xff58A6AA);
   static const Color water = Color(0xff6CBDE4);
+
+  Color getTypeColor({required String type}) {
+    if (type == 'fighting') {
+      return PokemonTypeColor.fighting;
+    } else if (type == 'flying') {
+      return PokemonTypeColor.flying;
+    } else if (type == 'poison') {
+      return PokemonTypeColor.poison;
+    } else if (type == 'ground') {
+      return PokemonTypeColor.ground;
+    } else if (type == 'rock') {
+      return PokemonTypeColor.rock;
+    } else if (type == 'bug') {
+      return PokemonTypeColor.bug;
+    } else if (type == 'ghost') {
+      return PokemonTypeColor.ghost;
+    } else if (type == 'steel') {
+      return PokemonTypeColor.steel;
+    } else if (type == 'fire') {
+      return PokemonTypeColor.fire;
+    } else if (type == 'water') {
+      return PokemonTypeColor.water;
+    } else if (type == 'grass') {
+      return PokemonTypeColor.grass;
+    } else if (type == 'electric') {
+      return PokemonTypeColor.electric;
+    } else if (type == 'psychic') {
+      return PokemonTypeColor.psychic;
+    } else if (type == 'ice') {
+      return PokemonTypeColor.ice;
+    } else if (type == 'dragon') {
+      return PokemonTypeColor.dragon;
+    } else if (type == 'dark') {
+      return PokemonTypeColor.dark;
+    } else if (type == 'fairy') {
+      return PokemonTypeColor.fairy;
+    } else {
+      return PokemonTypeColor.normal;
+    }
+  }
 }

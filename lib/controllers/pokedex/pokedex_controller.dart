@@ -15,7 +15,7 @@ class PokedexController extends GetxController {
 
   Future fetchPokemons() async {
     isLoading.value = true;
-    ApiServices.getPokemons(limit: '151').then((value) async {
+    ApiServices.getPokemons(limit: '12').then((value) async {
       if (value != null) {
         for (var i = 0; i < value.results.length; i++) {
           ApiServices.getPokemon(value.results[i].name).then((info) {
