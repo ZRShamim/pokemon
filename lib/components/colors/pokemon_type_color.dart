@@ -20,7 +20,7 @@ class PokemonTypeColor {
   static const Color steel = Color(0xff58A6AA);
   static const Color water = Color(0xff6CBDE4);
 
-  Color getTypeColor({required String type}) {
+  static Color getTypeColor({required String type}) {
     if (type == 'fighting') {
       return PokemonTypeColor.fighting;
     } else if (type == 'flying') {

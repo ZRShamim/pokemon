@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:poke_api/view/main_pages/pokedex/pokedex.dart';
+import 'package:poke_api/view/main_pages/pokemon_info/pokeomon_info.dart';
 
 class Routes {
   static const String splashScreen = '/splashScreen';
@@ -18,7 +19,7 @@ class Routes {
     ),
     GetPage(
       name: pokemonInfoScreen,
-      page: () => Pokedex(),
+      page: () => PokemonInfo(),
       // binding: ,
     ),
     // GetPage(

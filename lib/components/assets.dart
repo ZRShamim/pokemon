@@ -18,6 +18,9 @@ class Assets {
   static const String steel = 'assets/type_component/TypeSteel.png';
   static const String water = 'assets/type_component/TypeWater.png';
 
+  static const String pokeballLoadingAnimation =
+      'assets/lottie/pokeball-loading-animation.json';
+
   static String getTypeAssets({required String type}) {
     if (type == 'fighting') {
       return Assets.fighting;
